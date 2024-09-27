@@ -1,0 +1,92 @@
+.conteiner {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(#121212, #463c3c);
+}
+
+.title {
+  font-size: 200px;
+  color: antiquewhite;
+  animation: title 1.5s;
+}
+
+@keyframes title {
+  from{
+    transform: rotateX(90deg);
+  }
+  to{
+    transform: rotateX(0deg);
+  }
+}
+
+.conteinerInput {
+  display: flex;
+  background-color: rgba(255, 225, 205, 0.2);
+  padding: 15px;
+  margin: 34px;
+  border-radius: 8px;
+  box-shadow: 1px, 3px, 6px rgba(0,0,0 0.5);
+}
+
+.conteinerInput input{
+  background-color: transparent;
+  border: 0;
+  color:aliceblue;
+  outline: none;
+  margin-right: 2.5px;
+}
+
+.conteinerInput input::placeholder {
+  color: #F1F1F1;
+}
+
+.submit {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+.submit:hover{
+  transform: scale(1.5);
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #463c3c;
+  width: 850px;
+  border-radius: 8px;
+}
+
+.main h2{
+  margin: 16px 0;
+  font-size: 35;
+}
+
+.main span{
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 850px){
+  .title{
+    font-size: 100px;
+  }
+
+  .main h2{
+    font-size: 25px;
+  }
+
+  .main{
+    width: 80%;
+    min-height: 250px;
+  }
+}
